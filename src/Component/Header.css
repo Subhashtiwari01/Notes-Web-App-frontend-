@@ -1,0 +1,23 @@
+.menu-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.head-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.head-name {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.header-main {
+    background-color: black;
+    height: 20%;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+}

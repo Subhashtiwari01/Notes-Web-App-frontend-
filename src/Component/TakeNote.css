@@ -1,0 +1,123 @@
+
+.notes-body {
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .notes-main {
+    width: 100%; 
+    background-color: #6c9898;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .notes-main h1 {
+    margin-top: 0;
+  }
+  
+  .notes-main input[type="text"] {
+    width: 35vw;
+    height: 8vh;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    justify-content: center;
+    margin-left: 26vw;
+  }
+  
+  .notes-main button {
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    height: 7.9vh;
+    margin-left: 5px
+
+  }
+  
+
+  
+  .notes-main ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notes-main li {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 15vh;
+    width: 10vw;
+  }
+  
+  .notes-main li button {
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  .notes-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .note-box {
+    position: relative; /* Add this to make the delete button position relative to the note box */
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 100px;
+    min-width: 100px;
+    overflow: auto; 
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    background-color: antiquewhite;
+    border-radius: 10px;
+  }
+  
+.delete-button {
+    position: absolute; /* Position the delete button absolutely */
+    bottom: -5px; /* 5px from the bottom */
+    right: 5px; /* 5px from the right */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete-button:hover {
+    transition: 2000ms;
+  }
+  
